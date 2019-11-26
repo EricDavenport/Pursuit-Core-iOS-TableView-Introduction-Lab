@@ -58,10 +58,15 @@
                     </view>
                     <toolbarItems/>
                     <navigationItem key="navigationItem" id="9RU-ww-1P0">
-                        <barButtonItem key="rightBarButtonItem" title="Sort" id="RSx-zw-B7H"/>
+                        <barButtonItem key="rightBarButtonItem" title="Sort" id="RSx-zw-B7H">
+                            <connections>
+                                <action selector="sortMe:" destination="BYZ-38-t0r" id="7Cq-yP-Uaw"/>
+                            </connections>
+                        </barButtonItem>
                     </navigationItem>
                     <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
                     <connections>
+                        <outlet property="sortButton" destination="RSx-zw-B7H" id="cNb-4i-m2O"/>
                         <outlet property="tableView" destination="NZn-xr-uMb" id="lQ6-m0-AQr"/>
                     </connections>
                 </viewController>
